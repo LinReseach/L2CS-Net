@@ -1,0 +1,8 @@
+How to obtain prediction from L2CS trained on Gaze360 on this laptop:
+To test L2CS we used the code froked from the original github implementation of the paper and adapted to work with our stored images. 
+
+1) activate the conda environment named "l2cs"(use the requirement.txt to create the environment)
+2) go to the folder Documents/Projects/L2CS-Net-main/
+3) the input folder needed to be specified in the code. Moreover the input need to be in the form of pictures.
+4) python3 demo_local.py --snapshot models/Gaze360-20220914T091057Z-001/Gaze360/L2CSNet_gaze360.pkl to run the code
+5) the output is a video of the predicted gaze and a dataframe with the values of pitch and yaw predicted
